@@ -1,1 +1,38 @@
+.tooltiptext {
+    color: white;
+    background-color: red;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+}
 
+.tooltip {
+    width: fit-content;
+}
+
+h1.tooltiptext {
+    width: 8rem;
+    margin-left: 2rem;
+    margin-bottom: -2rem;
+    visibility: hidden;
+}
+
+h1 {
+    border-bottom: 2px solid grey;
+    width: fit-content;
+    padding: 1rem 2rem;
+}
+
+p {
+    border-bottom: 2px solid grey;
+    width: fit-content;
+    padding: 1rem 2rem;   
+}
+
+p.tooltiptext {
+    width: 8rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    visibility: hidden;
+}
