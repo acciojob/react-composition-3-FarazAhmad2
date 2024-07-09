@@ -4,19 +4,17 @@ import "../styles/App.css";
 
 const Tooltip = (props) => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
+  const Tag = props.tag || "div";
 
   return (
-    <div>
-      <div
-        className="tooltip"
-        onMouseEnter={() => setIsVisible(true)}
-        onMouseLeave={() => setIsVisible(false)}
-      >
-        {props.children}
-        {isVisible && <div className="tooltiptext">{props.text}</div>}
-      </div>
-    </div>
+    <Tag
+      className="tooltip"
+      onMouseEnter={() => setIsVisible(true)}
+      onMouseLeave={() => setIsVisible(false)}
+    >
+      {props.children}
+      {isVisible && <span className="tooltiptext">{props.text}</span>}
+    </Tag>
   );
 };
 

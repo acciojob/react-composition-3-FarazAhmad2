@@ -5,10 +5,8 @@ import Tooltip from "./Tooltip";
 const App = () => {
   return (
     <div>
-      <h2>
-      <Tooltip text={'This is a tooltip'} children={'Hover over me'} />
-      </h2>
-        <Tooltip text={'This is another tooltip'} children={'Hover over me to see another tooltip'} />
+      <Tooltip tag="h2" text={'This is a tooltip'}>Hover over me</Tooltip>
+      <Tooltip tag="p" text={'This is another tooltip'}>Hover over me to see another tooltip</Tooltip>
     </div>
   );
 };

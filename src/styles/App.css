@@ -23,11 +23,11 @@ h2 {
     padding: 1rem 2rem;
 }
 
-p {
+/* p {
     border-bottom: 2px solid grey;
     width: fit-content;
     padding: 1rem 2rem;   
-}
+} */
 
 p.tooltiptext {
     width: 8rem;
