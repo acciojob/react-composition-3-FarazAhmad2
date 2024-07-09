@@ -13,7 +13,7 @@ const Tooltip = (props) => {
         onMouseLeave={() => setIsVisible(false)}
       >
         {props.children}
-        {isVisible && <span className="tooltiptext">{props.text}</span>}
+        {isVisible && <div className="tooltiptext">{props.text}</div>}
       </div>
     </Tag>
   );
