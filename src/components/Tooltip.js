@@ -7,13 +7,14 @@ const Tooltip = (props) => {
   const Tag = props.tag || "div";
 
   return (
-    <Tag
-      className="tooltip"
-      onMouseEnter={() => setIsVisible(true)}
-      onMouseLeave={() => setIsVisible(false)}
-    >
-      {props.children}
-      {isVisible && <span className="tooltiptext">{props.text}</span>}
+    <Tag className="tooltip">
+      <div
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
+      >
+        {props.children}
+        {isVisible && <span className="tooltiptext">{props.text}</span>}
+      </div>
     </Tag>
   );
 };
